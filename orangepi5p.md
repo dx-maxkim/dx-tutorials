@@ -1,10 +1,19 @@
-<img width="845" height="202" alt="image" src="https://github.com/user-attachments/assets/5562ca30-aaf3-4c9d-98ee-7bd6a746814e" />```
+```
 sudo apt update
 sudo apt install git build-essential bison flex libssl-dev dwarves
 
 git clone https://github.com/orangepi-xunlong/orangepi-build.git
 cd orangepi-build
+./build.sh >> Kernel package >> Do not change the kernel configuration >> orangepi5plus >> Current Recommended
+cd output/debs
+sudo dpkg -i linux-headers-current-rockchip-rk3588_1.2.0_arm64.deb
 
+or
+
+wget https://github.com/user-attachments/files/22798846/linux-headers-6.1.x.tar.gz
+tar xzvf linux-headers-6.1.x.tar.gz
+sudo dpkg -i linux-headers-current-rockchip-rk3588_1.2.0_arm64.deb
+```
 
 # version down-grade:
 sudo apt -s install --allow-downgrades \
