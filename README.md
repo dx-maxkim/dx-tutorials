@@ -1,3 +1,15 @@
+# Introduction
+Welcome! This repository contains a growing collection of hands-on Jupyter Lab tutorials designed for learners of all levels who starts learning DEEPX products. Whether you're just getting started or looking to master advanced features, you'll find something useful here.
+
+The goal is to provide clear, step-by-step guides to help you become more productive and efficient in your data science and development workflows.
+
+## Table of Contents
+* **tutorial-01 (Getting_Started)**: Introduces how to install the DeepX SDK and verify that the setup is successful.
+* **tutorial-02 (DX_APP)**: TBD.
+* **tutorial-03 (DX_STREAM)**: TBD.
+* ... (and more to come!)
+
+
 # Installation Guide
 
 ## Prerequisites:
