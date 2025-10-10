@@ -1,32 +1,40 @@
-## Installation Guide
-```
+# Installation Guide
+
+## Prerequisites:
+```bash
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python3-venv build-essential python3-dev git-all ffmpeg
 ```
 
-```
-python3 -m venv ~/pipx-venv
-source ~/pipx-venv/bin/activate
-pip install pipx
-pipx install uv
-deactivate
-uv --version
+## Download this dx-tutorials repo
+```bash
+git clone https://github.com/dx-maxkim/dx-tutorials.git
+cd dx-tutorials
 ```
 
-## Create a Virtual Environment
-```
-uv venv jupyter-env
-source jupyter-env/bin/activate
-uv pip install -r requirements.txt
+
+## Create/Activate a python3 virtual environment
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-## How to run
+## Install required pip packages:
+```bash
+pip install -U pip
+pip install -r requirements.txt
 ```
+
+
+# Usages
+## Run jupyter-lab
+```bash
 jupyter-lab
 ```
 
-```
+## External connection
+```bash
 jupyter-lab --generate-config
 vi ~/.jupyter/jupyter_lab_config.py
 c.ServerApp.ip = '0.0.0.0'
