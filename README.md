@@ -42,10 +42,10 @@ pip install -r requirements.txt
 # Usages
 ## Run jupyter-lab
 ```bash
-jupyter-lab
+./run-jupyter-lab.sh
 ```
 
-## External connection
+## External connection (Optional)
 ```bash
 jupyter-lab --generate-config
 vi ~/.jupyter/jupyter_lab_config.py
